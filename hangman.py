@@ -80,8 +80,8 @@ while (roundFlag):
 		if newRound == 'y' or "Y":
 			reset_round()
 			clear_and_print_game()
-			#continue
 		else:
+			roundFlag = False
 			break
 	if guessCount >= 11:
 		print(f"You failed to guess the word in time! The word was {curWord}")
@@ -89,6 +89,6 @@ while (roundFlag):
 		if newRound == 'y' or "Y":
 			reset_round()
 			clear_and_print_game()
-			#continue
 		else:
+			roundFlag = False
 			break
