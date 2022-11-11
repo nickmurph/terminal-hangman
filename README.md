@@ -20,3 +20,11 @@ A Linux terminal implementation of Hangman, created while reacquainting with Ubu
 </br>
 
 ![Hangman victory](/img/demo2.png)
+
+</br>
+</br>
+</br>
+
+# Running Terminal Hangman
+execute the following cmd in your Linux terminal: </br>
+$python3 hangman.py
