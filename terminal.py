@@ -244,5 +244,3 @@ hangman0 = """
 
 """
 hangman_list = [hangman0,hangman1,hangman2,hangman3,hangman4,hangman5,hangman6,hangman7,hangman8,hangman9,hangman10,hangman11]
-#for x in hangman_list:
-#	print(x)
