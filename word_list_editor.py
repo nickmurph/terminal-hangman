@@ -1,6 +1,6 @@
 # taking the word list from usr/shared/dict/ and trimming it down per Hangman needs
 # this was a fun approach, but the words list is too broad in scope. Even with filtering out redundant possessive words and imposing a length range, there are 
-# 	far too zany personal names, obscure geographical locations, and extra-English words for it to be useful or fair to the player
+# 	far too many zany personal names, obscure geographical locations, and extra-English words for it to be useful or fair to the player
 # pivoting instead to a curated list of just hard hangman words found online
 
 dict_list = open("wordlist.txt", 'r')
