@@ -1,6 +1,9 @@
 #functions and vars for terminal manipulation and printing
+#functions for manipulating data and repetitive actions
+
 import os 
 
+alphabet ="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
 
 def clear_terminal():
 	os.system('clear')
@@ -9,6 +12,30 @@ def print_buffer():
 	print("")
 	print("")
 	print("")
+
+def print_header():
+	print(header_logo)
+	
+def validate_input(guess):
+	if len(guess) == 1 and guess in alphabet:
+		return True
+	else:
+		return -1
+
+def validation_loop(turn):
+	if turn == 1:
+		guess = input("Enter your first letter guess: ")
+	
+	else:
+		guess = input("Enter your next letter guess: ")
+
+	while (validate_input(guess) != True):
+		guess = input("Invalid input, enter a letter only:")
+	return guess
+
+def print_word_progress(wordArray):
+	print(" ".join(wordArray))
+
 
 header_logo = """
  _   _   ____   __  _  ____  __  __   ____   __  _
