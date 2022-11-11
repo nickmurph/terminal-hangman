@@ -84,7 +84,7 @@ while(roundFlag):
 			roundFlag = False
 
 	if guessCount >= 11:
-		print(f"You failed to guess the word in time! The word was {curWord}")
+		print(f"You failed to guess the word in time! The word was {curWord}.")
 		newRound = input("Would you like to play another round? (y/n)")
 
 		if newRound.upper() in ["Y","YES"]:
