@@ -48,7 +48,6 @@ def reset_round():
 	wordIndex = random.randint(0, wordListLen-1)
 	curWord = wordList[wordIndex].upper()
 	wordLength = len(curWord)
-	roundFlag = True
 	guessCount = 0
 	word_array = []
 	for i in range(wordLength):
@@ -69,7 +68,7 @@ guess = validation_loop(1)
 evaluate_guess()
 clear_and_print_game()
 
-while (roundFlag):
+while(roundFlag):
 	guess = validation_loop(2)
 	evaluate_guess()
 	clear_and_print_game()
@@ -77,18 +76,20 @@ while (roundFlag):
 	if " _ " not in word_array:
 		print("Congratulations, you guessed the word correctly!")
 		newRound = input("Would you like to play another round? (y/n)")
-		if newRound == 'y' or "Y":
+
+		if newRound.upper in ["Y", "YES"]:
 			reset_round()
 			clear_and_print_game()
 		else:
 			roundFlag = False
-			break
+
 	if guessCount >= 11:
 		print(f"You failed to guess the word in time! The word was {curWord}")
 		newRound = input("Would you like to play another round? (y/n)")
-		if newRound == 'y' or "Y":
+
+		if newRound.upper() in ["Y","YES"]:
 			reset_round()
 			clear_and_print_game()
+
 		else:
 			roundFlag = False
-			break
