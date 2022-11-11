@@ -77,7 +77,7 @@ while(roundFlag):
 		print("Congratulations, you guessed the word correctly!")
 		newRound = input("Would you like to play another round? (y/n)")
 
-		if newRound.upper in ["Y", "YES"]:
+		if newRound.upper() in ["Y", "YES"]:
 			reset_round()
 			clear_and_print_game()
 		else:
