@@ -1,13 +1,13 @@
 # Terminal Hangman
-A Linux terminal implementation of Hangman, created while reacquainting with Ubuntu (via WSL) and Git's command line
+A Linux terminal implementation of Hangman, created while reacquainting with Ubuntu (via WSL), Bash, Nano, and Git commands
 
 
 
 # Features
 - Classic Hangman gameplay in the Linux Terminal
 - Curated list of ~200 difficult words
-- The user can play multiple rounds without needed to re-run the program
 - ASCII graphics update progress of the player's hangman with each incorrect guess
+- The user can play multiple rounds without needing to re-run the program
 
 </br>
 </br>
